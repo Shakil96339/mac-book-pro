@@ -11,7 +11,102 @@
     <title>Document</title>
   </head>
   <body>
-    <h2 class="text-4xl">welome to assignment</h2>
-    <p>heey whaarrss app</p>
+    <header></header>
+    <main>
+      <section class=" grid grid-cols-2 ml-24 mt-24">
+        <div class="">
+          <img src="images/mac.png" alt="" />
+        </div>
+        <div class="">
+          <h1 class="text-7xl font-semibold text-yellow-600">
+            Customise your Blue 24-inch iMac with Apple M1 chip.
+          </h1>
+          <h3 class="text-4xl font-light mt-8 text-green-700">
+            Apple M1 chip is a 8core cpu with 4 performance cores & 4 effective
+            cores ,7 core GPU,and 16 core nural engine,8gb uniflied memory 256gb
+            SSD storage thunderbold/USB 4 ports Magic mouse magic key US english
+          </p>
+          <br>
+          <br>
+          <section>
+            <!-- memory section -->
+              <h3 class="font-bold mb-4">Memory</h3>
+              <div class="flex">
+              <button id="first-memory" class=" rounded-lg selected bg-green-500 text-white hover:text-black hover:bg-green-200 p-4 mr-4 border-green-600 ">8GB uniflied memory</button>
+
+              <button id="second-memory" class="border-2  rounded-lg bg-green-500 text-white hover:text-black hover:bg-green-200 p-4  border-green-600">16GB uniflied memory</button>
+            </div> 
+            <br>
+
+            <!-- storage section -->
+              <h3 class="font-bold mb-4">Storage</h3>
+              <div class="flex">
+              <button id="first-ssd"  class="  rounded-lg border-2 bg-green-500 text-white hover:text-black hover:bg-green-200 p-4 mr-4 border-green-600 ">256GB SSD STORAGE</button>
+
+              <button id="second-ssd"class="   rounded-lg border-2  bg-green-500 text-white hover:text-black hover:bg-green-200 p-4  border-green-600 mr-4">512GB SSD STORAGE</button>
+
+              <button id="third-ssd"class="   rounded-lg border-2  bg-green-500 text-white hover:text-black hover:bg-green-200 p-4  border-green-600">1TB SSD STORAGE</button>
+            </div> 
+            <br>
+
+            <!-- Choose delivery option -->
+              <h3 class="font-bold mb-4">Choose your Delivery option</h3>
+              <div class="flex">
+              <button id="free" class="  rounded-lg border-2 bg-green-500 text-white hover:text-black hover:bg-green-200 p-3 mr-4 border-green-600 ">Friday,Aug 25 FREE PRIME DELIVERY</button>
+
+              <button id="express" class="border-2 rounded-lg bg-green-500 text-white hover:text-black hover:bg-green-200   border-green-600">Friday,Aug 21 Delivery Charge</button>
+            </div>  
+          </section>
+
+
+          <!-- Pricing section -->
+         <section class="mt-32">
+        <table>
+          <tbody class="font-bold text-black   ">           
+            <tr class="mt-12">
+              <td class="p-4 ">Base Price</td>
+              <td>$<span id="base-price">1299</span> </td>
+             </tr>
+             <tr>
+              <td class="p-4">Extra memory cost</td>
+              <td>$<span id="memory-cost">0</span> </td>
+             </tr>
+            <tr>
+              <td class="p-4">Extra Storage cost</td>
+              <td>$<span id="storage">0</span></td>
+             </tr>
+             <tr>
+              <td class="p-4">Delivery charge</td>
+              <td>$<span id="delivery">0</span></td>
+              
+             </tr>
+             
+             <tr>
+              <td class="p-4 border-t-2 border-red-400 ">Total Price</td>
+              
+              <td class="p-4 border-t-2 border-red-400">$<span id="total">1299</span> </td>
+             </tr>          
+            </tbody>
+        </table> 
+       
+        <!-- promo code section -->
+        <h3 class="m-4  text-5xl text-black ">Add Promo Code</h3>
+        <input id="promo" class="border border-pink-500 rounded p-3 hover:bg-pink-200 text-black hover:bg-green-200" type="text" placeholder="Enter your promo code">
+
+            <button id="apply" class="border border-green-500 p-3 bg-green-500 text-white rounded  hover:text-black hover:bg-green-200">Apply</button>
+         </section>
+       
+        </div>
+        
+      </section>
+      <!-- Total section -->
+      <section>
+        <hr class="mt-12 p-4 border-t-2 border-gray-800  ">
+        <p class="text-8xl text-center mt-3">Total:$ <span id="last-total">1299</span> </p>
+       
+      </section>
+     
+    </main>
+    <script src="js/index.js"></script>
   </body>
 </html>
